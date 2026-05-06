@@ -44,8 +44,11 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Welcome, I'm</h3>
+        <br />
         <h1>Rashad Clement</h1>
+        <br />
         <h3>And I am a <span class="multiple-text"></span></h3>
+        <br />
         <p>
           A self-taught web developer with a background in audio engineering. I
           have an appetite for learning and being taught.
@@ -70,6 +73,7 @@
         <img src="./assets/images/Home-1.png" alt="The Man" />
       </div>
     </section>
+    <hr style="color: bisque" />
 
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
@@ -109,6 +113,7 @@
         </p> -->
       </div>
     </section>
+    <hr style="color: bisque" />
 
     <!-- SKILLS SECTION -->
 
@@ -126,13 +131,37 @@
             JavaScript, React, TypeScript and Node while learning back-end
             technologies.
           </p>
-          <img src="assets/tech/javascript.png" alt="javascript" />
-          <img src="assets/tech/reactjs.png" alt="react" />
-          <img src="assets/tech/nodejs.png" alt="node" />
-          <img src="assets/tech/typescript.png" alt="typescript" />
-          <img src="assets/tech/html.png" alt="html" />
-          <img src="assets/tech/css.png" alt="css" />
-          <img src="assets/tech/tailwind.png" alt="tailwind" />
+          <table
+            style="
+              margin: 20px auto;
+              border-collapse: separate;
+              border-spacing: 70px;
+            "
+          >
+            <caption style="font-size: 28px; font-style: italic">
+              Programming Tools I Work With
+            </caption>
+            <tr>
+              <th><img src="assets/tech/html.png" alt="html" /></th>
+              <th><img src="assets/tech/css.png" alt="css" /></th>
+              <th><img src="assets/tech/python-96.png" alt="python" /></th>
+              <th><img src="assets/tech/javascript.png" alt="javascript" /></th>
+            </tr>
+            <tr>
+              <th><img src="assets/tech/reactjs.png" alt="react" /></th>
+              <th><img src="assets/tech/nodejs.png" alt="node" /></th>
+              <th><img src="assets/tech/typescript.png" alt="typescript" /></th>
+              <th><img src="assets/tech/tailwind.png" alt="tailwind" /></th>
+            </tr>
+            <tr>
+              <th><img src="assets/tech/c-sharp-96.png" alt="c-sharp" /></th>
+              <th><img src="assets/tech/c++-96.png" alt="c++" /></th>
+              <th>
+                <img src="assets/tech/bootstrap-96.png" alt="bootstrap" />
+              </th>
+              <th><img src="assets/tech/sass-96.png" alt="github" /></th>
+            </tr>
+          </table>
         </div>
         <div class="skills-box">
           <i class="bx bx-podcast"></i>
@@ -144,93 +173,103 @@
             challenge with an organization that will give me the opportunity to
             apply and enriches my experience.
           </p>
-          <img src="assets/tech/pro-tools.png" alt="pro tools" />
-          <img src="assets/tech/logic-pro.png" alt="logic pro" />
-          <img src="assets/tech/premiere-pro.png" alt="premiere pro" />
-          <img src="assets/tech/audition.png" alt="audition" />
-          <img src="assets/tech/OBS.png" alt="obs" />
+          <h4 style="font-size: 28px; margin: 20px auto; font-style: italic">
+            DAWs I Work With
+          </h4>
+          <ul class="ul">
+            <img src="assets/tech/pro-tools.png" alt="pro tools" />
+            <img src="assets/tech/logic-pro.png" alt="logic pro" />
+            <img src="assets/tech/premiere-pro.png" alt="premiere pro" />
+            <img src="assets/tech/audition.png" alt="audition" />
+            <img src="assets/tech/OBS.png" alt="obs" />
+          </ul>
         </div>
       </div>
     </section>
+    <hr style="color: bisque" />
 
     <!-- WORK SECTION -->
-    <section class="work" id="work">
-      <h2 class="heading">Recent <span>Projects</span></h2>
+    <main>
+      <section class="work" id="work">
+        <h2 class="heading">Recent <span>Projects</span></h2>
 
-      <div class="work-container">
-        <div class="work-box">
-          <img src="assets/images/robofriends.png" alt="" />
-          <div class="work-layer">
-            <h4>Robo-Friends</h4>
-            <p>
-              When you want to give you email list a little jazzing up this
-              React project helps you keep each person's name, email and
-              whatever else you need togther. Also gives them a entertaining
-              robot head from an api known as robohash.org.
-            </p>
-            <a href="https://github.com/RashadC30/Robo-Friends"
-              ><i class="bx bx-code"></i
-            ></a>
-            <a href="https://rashadc30.github.io/Robo-Friends/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <div class="work-container">
+          <div class="work-box">
+            <img src="assets/images/robofriends.png" alt="" />
+            <div class="work-layer">
+              <h4>Robo-Friends</h4>
+              <p>
+                When you want to give you email list a little jazzing up this
+                React project helps you keep each person's name, email and
+                whatever else you need togther. Also gives them a entertaining
+                robot head from an api known as robohash.org.
+              </p>
+              <a href="https://github.com/RashadC30/Robo-Friends"
+                ><i class="bx bx-code"></i
+              ></a>
+              <a href="https://rashadc30.github.io/Robo-Friends/"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-box">
+            <img src="assets/images/weatherapp.png" alt="" />
+            <div class="work-layer">
+              <h4>Mr. Weather</h4>
+              <p>
+                Created with React some JSX and a little bit of CSS, this app
+                has the capability of giving the user an exact reading of the
+                forecast of any city on the planet. All weather information was
+                obtained a from openweather.org, which is a very reliable
+                weather API.
+              </p>
+              <a href="https://github.com/RashadC30/Mr.-Weather_React"
+                ><i class="bx bx-code"></i
+              ></a>
+              <a href="https://rashadc30.github.io/Mr.-Weather_React/"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-box">
+            <img src="assets/images/Pinched-photo.png" alt="" />
+            <div class="work-layer">
+              <h4>Pinched</h4>
+              <p>
+                Took sounds from my personal library to create a different feel
+                to this piece after I took out all the original sounds. Recorded
+                my own vocals and filtered them through some plug-ins to give
+                them a unique feel for each character.
+              </p>
+              <a href="https://youtu.be/_z9pfgiqjUA"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-box">
+            <img src="assets/images/the_checklist.png" alt="" />
+            <div class="work-layer">
+              <h4>The Checklist</h4>
+              <p>
+                A checklist to keep up with your every day life. Created using
+                TypeScript and Vite with the capabilities to add, cross-off and
+                remove any item you add to it.
+              </p>
+              <a href="https://github.com/RashadC30/The_Checklist"
+                ><i class="bx bx-code"></i
+              ></a>
+              <a href="https://the-checklist.vercel.app/"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
           </div>
         </div>
-
-        <div class="work-box">
-          <img src="assets/images/weatherapp.png" alt="" />
-          <div class="work-layer">
-            <h4>Mr. Weather</h4>
-            <p>
-              Created with React some JSX and a little bit of CSS, this app has
-              the capability of giving the user an exact reading of the forecast
-              of any city on the planet. All weather information was obtained a
-              from openweather.org, which is a very reliable weather API.
-            </p>
-            <a href="https://github.com/RashadC30/Mr.-Weather_React"
-              ><i class="bx bx-code"></i
-            ></a>
-            <a href="https://rashadc30.github.io/Mr.-Weather_React/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="assets/images/Pinched-photo.png" alt="" />
-          <div class="work-layer">
-            <h4>Pinched</h4>
-            <p>
-              Took sounds from my personal library to create a different feel to
-              this piece after I took out all the original sounds. Recorded my
-              own vocals and filtered them through some plug-ins to give them a
-              unique feel for each character.
-            </p>
-            <a href="https://youtu.be/_z9pfgiqjUA"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="assets/images/the_checklist.png" alt="" />
-          <div class="work-layer">
-            <h4>The Checklist</h4>
-            <p>
-              A checklist to keep up with your every day life. Created using
-              TypeScript and Vite with the capabilities to add, cross-off and
-              remove any item you add to it.
-            </p>
-            <a href="https://github.com/RashadC30/The_Checklist"
-              ><i class="bx bx-code"></i
-            ></a>
-            <a href="https://the-checklist.vercel.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <hr style="color: bisque" />
 
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
@@ -262,6 +301,7 @@
         />
       </form>
     </section>
+    <hr style="color: bisque" />
 
     <!-- FOOTER SECTION -->
     <footer class="footer">

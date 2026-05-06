@@ -261,6 +261,14 @@ span {
     animation-delay: calc(3s * var(--i));
 }
 
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
 .work {
     background: #413543;
 }
