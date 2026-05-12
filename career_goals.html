@@ -28,7 +28,7 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="index.html" style="--i: 1" class="active">Portfolio</a>
+        <a href="resume.html" style="--i: 1" class="active">Portfolio</a>
         <a href="cover.html" style="--i: 2">Cover Letter</a>
         <a href="#contact" style="--i: 3">Contact</a>
       </nav>
@@ -80,24 +80,60 @@
     <section class="contact" id="contact">
       <h2 class="heading">Let's <span>Connect!</span></h2>
 
-      <form action="#">
+      <form action="/resume.html">
         <div class="input-box">
-          <input type="text" placeholder="First Name" id="name" />
-          <input type="text" placeholder="Last Name" id="name" />
-          <input type="text" placeholder="Company Name" id="name" />
+          <input type="text" placeholder="First Name" id="fname" />
+          <input type="text" placeholder="Last Name" id="lname" />
+          <input type="text" placeholder="Company Name" id="company" />
           <input type="email" placeholder="Email" id="email" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Cellphone Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="tel" placeholder="Cellphone Number" id="phone" />
+          <input type="text" placeholder="Email Subject" id="subject" />
         </div>
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+          "
+        >
+          <p>Best Time to Contact:</p>
+          <br />
+          <input type="radio" id="am" name="time" value="am" size="" />
+          <label for="am">AM</label><br />
+          <input type="radio" id="pm" name="time" value="pm" />
+          <label for="pm">PM</label><br />
+          <input type="radio" id="anytime" name="time" value="anytime" />
+          <label for="anytime">Any Time</label>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+          "
+        >
+          <input
+            type="text"
+            name="SearchableList"
+            id="list-of-contact-options"
+            placeholder="How do you want me to contact you?"
+            list="contact-options"
+            style="font-size: xx-large"
+          />
+          <datalist id="contact-options">
+            <option value="Email"></option>
+            <option value="Phone Call"></option>
+            <option value="Text Message"></option>
+            <option value="Video Call"></option>
+          </datalist>
+        </div>
         <input
           onclick="sendMail()"
           type="submit"

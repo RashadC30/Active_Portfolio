@@ -64,7 +64,7 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #E96479
+    color: #E96479;
 }
 
 #menu-icon {
@@ -267,6 +267,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
+    list-style:upper-roman;
 }
 
 .work {
